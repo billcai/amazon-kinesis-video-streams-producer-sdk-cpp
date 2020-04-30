@@ -106,7 +106,7 @@ if [[ $build_producer == TRUE ]]; then
     if [ ! -f $DOWNLOADS/openssl-1.1.1d.tar.gz ]; then
       cd $DOWNLOADS
       #download_cmd="curl -L "https://www.openssl.org/source/openssl-1.1.1d.tar.gz" -o "openssl-1.1.1d.tar.gz" "
-      $SYS_CURL -L "https://www.openssl.org/source/openssl-1.1.1d.tar.gz" -o "openssl-1.1.1d.tar.gz"
+      $SYS_CURL -L "https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1d.tar.gz" -o "openssl-1.1.1d.tar.gz"
     fi
     cd $DOWNLOADS
     tar -xvf openssl-1.1.1d.tar.gz
